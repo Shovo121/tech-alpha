@@ -1,6 +1,26 @@
+import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
+
+
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <div className="app min-h-screen bg-gray-50 text-gray-700">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={ <Home /> }/>
+          <Route path="/products" element={ <Products /> }/>
+          <Route path="/cart" element={ <Cart /> }/>
+          <Route path="/not-found" element={ <NotFound /> }/>
+        </Routes>
+      </div>
+        <Footer />
+    </>
   )
 }
 

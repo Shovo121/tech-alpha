@@ -2,11 +2,6 @@ import { useState } from "react";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import Slide from "./Slide";
 
-
-
-
-
-
 const data = [
   {
     id: 1,
@@ -14,6 +9,7 @@ const data = [
     headline: 'dslr cameras for stunning photos',
     body:"A DSLR camera is a must-have tool for capturing life's special moments. With its advanced features and high-quality lens, a DSLR allows you to take stunning photos and videos that truly represent your unique perspective.",
     btn:"Get the DSLR Camera now",
+    category:"Camera"
   },
   {
     id: 2,
@@ -21,6 +17,7 @@ const data = [
     headline: "Unleash the Power of Picture with a New TV",
     body: "Upgrade your home entertainment experience with a new TV. With advanced technology and stunning picture quality, you'll be able to enjoy your favorite movies, TV shows, and games like never before.",
     btn:"Shop TVs now",
+    category:"Tv"
   },
   {
     id: 3,
@@ -28,6 +25,7 @@ const data = [
     headline: "Discover Stunning Sound with Headphones",
     body: "Experience music like never before with high-quality headphones. With advanced technology and a comfortable fit, you can enjoy your favorite tunes in stunning clarity and depth.",
     btn:"Shop headphones now",
+    category:"Headphone"
   },
   {
     id: 4,
@@ -35,6 +33,7 @@ const data = [
     headline: "Elevate Your Gaming with a Console",
     body: "Experience gaming like never before with a powerful console. With advanced technology and stunning graphics, you'll enjoy a smooth and immersive gaming experience.",
     btn:"Shop consoles now",
+    category:"Console"
   },
   {
     id: 5,
@@ -42,6 +41,7 @@ const data = [
     headline: "tay Connected with a Smartwatch",
     body: " Elevate your style and functionality with a high-quality smartwatch. With features like fitness tracking, message notifications, and voice control, you'll stay connected and in control no matter where you go. ",
     btn:"Shop smartwatches now",
+    category:"Smartwatch"
   }
 ]
 

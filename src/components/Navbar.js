@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa"
+import { useSelector } from "react-redux";
 const Navbar = () => {
+  const {cartItems} = useSelector(state => state.carts);
   return (
     <div className="navbar-bg bg-violet-700 text-violet-50 h-20 flex justify-center items-center">
       <div className="navbar container mx-auto flex items-center justify-between">
@@ -12,7 +14,7 @@ const Navbar = () => {
           <Link to='/products' className="nav-link">Products</Link>
           <Link to='/cart'>
             <span className="cart-icon relative"><FaShoppingCart />
-            <span className="cart-counter absolute -top-3 -right-3 bg-orange-700 h-5 w-5 rounded-full flex items-center justify-center text-sm font-medium">10</span>
+            <span className="cart-counter absolute -top-3 -right-3 bg-orange-700 h-5 w-5 rounded-full flex items-center justify-center text-sm font-medium">{cartItems.length}</span>
             </span>
           </Link>
         </div>
